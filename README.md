@@ -10,7 +10,7 @@ and the javascript in the javascript folder.
 
 
 # ATRIBUTES
-* [ttps://fontawesome.com/icons/space-shuttle?style=solid](#Space shuttle icon)
-* [https://fontawesome.com/icons/ban?style=solid](#ban icon)
-* [https://www.figma.com/file/lXwgIilLcOgnmisdLZnfPw/Untitled?node-id=0%3A1](#my figma coppy)
+* [Space shuttle icon](ttps://fontawesome.com/icons/space-shuttle?style=solid)
+* [Ban icon](https://fontawesome.com/icons/ban?style=solid)
+* [My Figma Copy](https://www.figma.com/file/lXwgIilLcOgnmisdLZnfPw/Untitled?node-id=0%3A1)
 
