@@ -3,8 +3,10 @@ By Michael Hintz
 
 # About
 * I have 2 logos here one is a ban space shuttle and the other is the dominoes pizza logo 
-i have a default color scheme. I created a dark and light color button that changes the background from white to black i aslo changed the default colors from figma on the space shuttl.  
+i have a default color scheme. I created a dark and light color button that changes the background from white to black i aslo changed the default colors from figma on the space shuttle.  
 the svg logos are in the assets folder.
+css in the css folder. 
+and the javascript in the javascript folder.
 
 
 # ATRIBUTES
