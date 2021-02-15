@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SVG assingment</title>
+</head>
+
+<body>
+    
+    <button onclick="toggle_light_mode()">
+        Dark Mode button
+    </button>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Svg assignment</title>
+</head>
+<style>
+  body {
+      transition: background-color .3s;
+  }
+  
+  body[data-light-mode=dark] {
+      background-color: #000;
+      color: #eee;
+  }
+  button {
+    padding: 1em;
+    font-size: 1em;
+    background: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    opacity:.5;
+}
+
+body[data-light-mode="dark"] button {
+    background-color: #fff;
+    color: #000;
+}
+
+  </style>
+
+<svg width="621" height="512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill="#E5E5E5" d="M0 0h621v512H0z"/>
+  <path fill="#0A4D8A" d="M0 293.27L63.29 230l58.8 58.81L58.8 352.1z"/>
+  <ellipse cx="85.79" cy="290.59" rx="15.45" ry="14.22" transform="rotate(-1.4 85.8 290.6)" fill="#fff"/>
+  <circle cx="34.2" cy="291.2" r="14.2" fill="#fff"/>
+  <path fill="#EB3333" d="M80 217.81L138.81 159l58.81 58.81-58.81 58.81z"/>
+  <ellipse cx="137.45" cy="218.22" rx="15.45" ry="14.22" fill="#fff"/>
+  <path d="M401.5 139C327.77 139 268 198.77 268 272.5c0 73.73 59.77 133.5 133.5 133.5 73.73 0 133.5-59.77 133.5-133.5 0-73.73-59.77-133.5-133.5-133.5zm70.04 63.46c35.23 35.23 37.68 89.08 11.13 126.85L344.69 191.33c37.8-26.57 91.64-24.08 126.85 11.13zM331.46 342.54c-35.23-35.23-37.68-89.08-11.13-126.85l137.98 137.98c-37.8 26.57-91.64 24.08-126.85-11.13z" fill="#030303"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M329.95 229.43v10.9c-5.76 0-7.95 2.48-7.95 5.94v9.91c0 3.47 2.2 5.95 7.95 5.95v3.96c-5.76 0-7.95 2.49-7.95 5.95v9.91c0 3.47 2.2 5.95 7.95 5.95v15.86c0 8.75 5.34 15.85 11.93 15.85V287.9h3.97v31.71c15.75 0 24.05-6.91 33.34-14.65 4.67-3.9 9.6-8 15.84-11.53l-7.64-7.51h-23.25c1.52-1 2.92-2.34 4.15-3.97h15.07l-53.41-52.52zm109.67 52.52c10.75-.05 21.53-2.23 29.6-6 7.38-3.45 11.78-7.88 11.78-11.84s-4.4-8.38-11.77-11.83c-8.17-3.82-19.1-6-29.97-6h-35.93l36.29 35.67zm-40.32-39.64h16.11c-14.76-3.03-23.94-9.13-31.68-15.31l15.57 15.3zm42.53 31.13c.38.37.88.58 1.4.58 7.94 0 7.94-19.82 0-19.82a1.99 1.99 0 00-1.98 1.98v15.86c0 .53.2 1.03.58 1.4z" fill="#1C8A0A"/>
+</svg>
+
+
+
+<script>
+  function toggle_light_mode() {
+      var app = document.getElementsByTagName("BODY")[0];
+      if (localStorage.lightMode == "dark") {
+    localStorage.lightMode = "light";
+    app.setAttribute("data-light-mode", "light");
+      } else {
+    localStorage.lightMode = "dark";
+    app.setAttribute("data-light-mode", "dark");
+      }		
+  }
+  </script>
